@@ -1,0 +1,24 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadAra-UcHiHa89/websockets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadAra-UcHiHa89/websockets/issues"
+  },
+  "homepage": "https://github.com/MadAra-UcHiHa89/websockets#readme",
+  "dependencies": {
+    "nodemon": "^2.0.16",
+    "websocket": "^1.0.34"
+  }
+}
