@@ -1,6 +1,6 @@
 const http = require("http");
 const webSocketServer = require("websocket").server; // Returns a websocket class which can be used to create a websocket.
-let connection = null;
+let connections = [];
 const httpserver = http.createServer((req, res) => {
   console.log("Request Received");
 });
@@ -19,6 +19,7 @@ webSocket.on("request", (request) => {
   // returns a connection object which is used to send and receive data from the client on that websocket.
 
   // To this connection object we can add event listeners to listen to the events that are emitted by the client.
+  connections.push(connection); // Pushing this client  connection to the connections array.
 
   //   connection.send("Hello Client!!");
   // This method is used to send data to the client connected to the websocket server
